@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1d242d;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+    position: relative;
+}
+
+.navbar ul li a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    transition: color .3s;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background: #7cf03d;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform .3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #7cf03d;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Active navigation item */
+
+.navbar ul li.active a,
+.navbar ul li.active a:hover {
+    color: #7cf03d;
+}
+
+.navbar ul li.active a::after,
+.navbar ul li.active a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page-content {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 140px 9% 80px;
+
+    color: #fff;
+
+    visibility: hidden;
+    opacity: 0;
+
+    animation: show-content .5s linear forwards;
+    animation-delay: .3s;
+}
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* =========================
+   CONTACT TITLE
+========================= */
+
+.contact-page-content h2 {
+    font-size: 32px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.contact-page-content h2 span {
+    position: relative;
+    display: inline-block;
+
+    color: transparent;
+    -webkit-text-stroke: .7px #7cf03d;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.contact-page-content form {
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box {
+    display: flex;
+    gap: 20px;
+}
+
+.input-box input,
+.contact-page-content textarea {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border: 2px solid #7cf03d;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    transition: .3s ease;
+}
+
+
+/* Placeholder */
+
+.input-box input::placeholder,
+.contact-page-content textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* Focus effect */
+
+.input-box input:focus,
+.contact-page-content textarea:focus {
+    border-color: #fff;
+
+    box-shadow: 0 0 15px rgba(124, 240, 61, .25);
+}
+
+
+/* Textarea */
+
+.contact-page-content textarea {
+    min-height: 180px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+.contact-page-content .btn {
+    align-self: center;
+
+    padding: 12px 30px;
+
+    border: 2px solid #7cf03d;
+    border-radius: 8px;
+
+    background: #7cf03d;
+
+    color: #1d242d;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.contact-page-content .btn:hover {
+    background: transparent;
+
+    color: #7cf03d;
+
+    box-shadow: 0 0 20px rgba(124, 240, 61, .25);
+
+    transform: translateY(-3px);
+}
+
+.contact-page-content .btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding: 25px 5%;
+    }
+
+    .navbar ul li {
+        margin-left: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 17px;
+    }
+
+    .contact-page-content {
+        padding: 130px 5% 60px;
+    }
+
+    .contact-page-content form {
+        max-width: 700px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 15px;
+    }
+
+    .contact-page-content {
+        padding-top: 170px;
+    }
+
+    .contact-page-content h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-box input,
+    .contact-page-content textarea {
+        font-size: 14px;
+    }
+
+    .contact-page-content textarea {
+        min-height: 160px;
+    }
+
+    .contact-page-content .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}

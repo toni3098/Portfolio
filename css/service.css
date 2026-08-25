@@ -81,8 +81,6 @@ a {
     transform: scaleX(1);
 }
 
-/* Active menu */
-
 .navbar ul li.active a,
 .navbar ul li.active a:hover {
     color: #7cf03d;

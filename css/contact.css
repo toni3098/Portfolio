@@ -17,11 +17,6 @@ a {
     text-decoration: none;
 }
 
-
-/* =========================
-   NAVBAR
-========================= */
-
 .navbar {
     position: fixed;
     left: 0;
@@ -82,9 +77,6 @@ a {
     transform: scaleX(1);
 }
 
-
-/* Active navigation item */
-
 .navbar ul li.active a,
 .navbar ul li.active a:hover {
     color: #7cf03d;
@@ -94,11 +86,6 @@ a {
 .navbar ul li.active a:hover::after {
     transform: scaleX(1);
 }
-
-
-/* =========================
-   CONTACT PAGE
-========================= */
 
 .contact-page-content {
     min-height: 100vh;
@@ -126,11 +113,6 @@ a {
     }
 }
 
-
-/* =========================
-   CONTACT TITLE
-========================= */
-
 .contact-page-content h2 {
     font-size: 32px;
     margin-bottom: 45px;
@@ -145,11 +127,6 @@ a {
     -webkit-text-stroke: .7px #7cf03d;
 }
 
-
-/* =========================
-   FORM
-========================= */
-
 .contact-page-content form {
     width: 100%;
     max-width: 850px;
@@ -159,11 +136,6 @@ a {
 
     gap: 20px;
 }
-
-
-/* =========================
-   INPUT BOX
-========================= */
 
 .input-box {
     display: flex;
@@ -190,16 +162,10 @@ a {
     transition: .3s ease;
 }
 
-
-/* Placeholder */
-
 .input-box input::placeholder,
 .contact-page-content textarea::placeholder {
     color: #aaa;
 }
-
-
-/* Focus effect */
 
 .input-box input:focus,
 .contact-page-content textarea:focus {
@@ -208,19 +174,11 @@ a {
     box-shadow: 0 0 15px rgba(124, 240, 61, .25);
 }
 
-
-/* Textarea */
-
 .contact-page-content textarea {
     min-height: 180px;
 
     resize: vertical;
 }
-
-
-/* =========================
-   SEND BUTTON
-========================= */
 
 .contact-page-content .btn {
     align-self: center;
@@ -255,11 +213,6 @@ a {
 .contact-page-content .btn:active {
     transform: translateY(0);
 }
-
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media screen and (max-width: 900px) {
 

@@ -17,10 +17,6 @@ a {
     text-decoration: none;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
 .navbar {
     position: fixed;
     left: 0;
@@ -31,6 +27,7 @@ a {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #1d242d;
 }
 
 .navbar .logo {
@@ -56,8 +53,6 @@ a {
     color: #fff;
     transition: color .3s;
 }
-
-/* Green underline animation */
 
 .navbar ul li a::after {
     content: '';

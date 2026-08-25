@@ -30,7 +30,7 @@ a {
     opacity: 0;
     animation: show-content .5s linear forwards;
     animation-delay: .5s;
-    background: #1d242d; 
+    background-color: #1d242d;
 }
 
 @keyframes show-content {

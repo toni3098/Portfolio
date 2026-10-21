@@ -5,46 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service | Portfolio Zafitombo Antonio</title>
-    <script src="https://kit.fontawesome.com/a36ef09c1e.js" crossorigin="anonymous"></script>
+
+    <title>Services | Portfolio Zafitombo Antonio</title>
+
+    <meta name="description"
+          content="Explore Antonio Zafitombo's services in frontend web development, Python programming, and database design.">
+
+    <script src="https://kit.fontawesome.com/a36ef09c1e.js"
+            crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../css/service.css">
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <a href="../index.html" class="logo">Portfolio.</a>
+
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="active">
+                <a href="service.html" aria-current="page">Services</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
     </nav>
 
-    <section class="services-page-content">
-        <h2>My <span>Services</span></h2>
+    <main>
+        <section class="services-page-content"
+                 aria-labelledby="services-heading">
 
-        <div class="services-grid">
-            <div class="service-box">
-                <i class="fa-solid fa-code"></i>
-                <h4>Web Development</h4>
-                <p>Short description of this service goes here.</p>
+            <h2 id="services-heading">My <span>Services</span></h2>
+
+            <p class="services-intro">
+                Bringing your ideas to life through web interfaces,
+                purposeful software, and well-structured data.
+            </p>
+
+            <div class="services-grid">
+
+                <div class="service-box">
+                    <i class="fa-solid fa-code"
+                       aria-hidden="true"></i>
+
+                    <h4>Frontend Web Development</h4>
+
+                    <p>
+                        I create websites and web interfaces for personal
+                        portfolios, business presentations, and platform
+                        prototypes — turning your ideas into a clear,
+                        engaging digital presence.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <i class="fa-brands fa-python"
+                       aria-hidden="true"></i>
+
+                    <h4>Python Development</h4>
+
+                    <p>
+                        I develop Python programs for specific technical
+                        needs, including data collection and computational
+                        modeling — translating practical challenges into
+                        focused software solutions.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <i class="fa-solid fa-database"
+                       aria-hidden="true"></i>
+
+                    <h4>Database Design</h4>
+
+                    <p>
+                        I design database structures tailored to your
+                        application's needs, organizing information and
+                        defining relationships for projects such as
+                        personnel directories and business records.
+                    </p>
+                </div>
+
             </div>
 
-            <div class="service-box">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <h4>App Development</h4>
-                <p>Short description of this service goes here.</p>
+            <div class="services-cta">
+                <p>
+                    Have an idea in mind? Let's discuss your goals
+                    and find the right approach for your project.
+                </p>
+
+                <a href="contact.html" class="btn">
+                    Discuss Your Project
+                </a>
             </div>
 
-            <div class="service-box">
-                <i class="fa-solid fa-palette"></i>
-                <h4>UI/UX Design</h4>
-                <p>Short description of this service goes here.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="../nav.js"></script>
 </body>

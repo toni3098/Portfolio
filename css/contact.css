@@ -116,7 +116,7 @@ a {
 
 .contact-page-content h2 {
     font-size: 32px;
-    margin-bottom: 45px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
@@ -126,6 +126,46 @@ a {
 
     color: transparent;
     -webkit-text-stroke: .7px #7cf03d;
+}
+
+/* Contact introduction */
+.contact-page-content .contact-intro {
+    width: 100%;
+    max-width: 620px;
+    margin-bottom: 35px;
+    padding: 0 12px;
+
+    color: #cbd2dc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Subtle green accent */
+.contact-page-content .contact-intro::after {
+    content: '';
+    display: block;
+
+    width: 55px;
+    height: 3px;
+    margin: 20px auto 0;
+
+    background: #7cf03d;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(124, 240, 61, .25);
+}
+
+@media screen and (max-width: 600px) {
+    .contact-page-content h2 {
+        margin-bottom: 15px;
+    }
+
+    .contact-page-content .contact-intro {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
 }
 
 .contact-page-content form {

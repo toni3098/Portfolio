@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,133 +6,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Portfolio Zafitombo Antonio</title>
-    <script src="https://kit.fontawesome.com/a36ef09c1e.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio | Zafitombo Antonio</title>
+
+    <script
+        src="https://kit.fontawesome.com/a36ef09c1e.js"
+        crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="../css/portfolio.css">
 </head>
 
 <body>
+
     <nav class="navbar">
         <a href="../index.html" class="logo">Portfolio.</a>
+
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
             <li><a href="service.html">Service</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <section class="portfolio-page-content">
+
         <h2>My <span>Portfolio</span></h2>
 
         <p class="portfolio-intro">
-            From web interfaces to scientific models, explore the projects
-            where I turn ideas into practical digital solutions.
+            From web development to scientific modeling, discover
+            the projects where I turn ideas into practical solutions.
         </p>
 
         <div class="portfolio-grid">
-            <div class="portfolio-box">
-                <img src="../asset/portfolio-preview.png"
-                 alt="Preview of my personal portfolio website">
+
+            <!-- 1. Personal Portfolio -->
+            <a href="../index.html"
+               class="portfolio-box"
+               aria-label="Explore my personal portfolio"
+               target="_blank">
+
+                <img
+                    src="../asset/portfolio-preview.png"
+                    alt="Personal portfolio website preview">
 
                 <div class="portfolio-layer">
                     <h4>Personal Portfolio</h4>
+
                     <p>
-                        A personal website presenting my background,
-                        technical projects, and ambitions as a developer.
+                        A personal website showcasing my background,
+                        skills, projects, and ambitions as a developer.
                     </p>
+
                     <span class="project-category">Web Development</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-box">
-                <img id="cryptimg" src="../asset/crypto-platform.png"
-                    alt="Frontend interface of my cryptocurrency sales platform project">
+            <!-- 2. METEOKO Weather Application -->
+            <a href="https://meteoko.netlify.app/" target="_blank"
+               class="portfolio-box"
+               aria-label="Explore the METEOKO weather application">
 
-                <div class="portfolio-layer">
-                    <h4>Crypto Platform Interface</h4>
-                    <p>
-                        A frontend project exploring the design and
-                        development of a cryptocurrency sales platform.
-                    </p>
-                    <span class="project-category">Frontend Development</span>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="../asset/ticket-platform.png"
-                    alt="Frontend interface of my ticket sales platform project">
+                <img
+                    src="../asset/meteoko.png"
+                    alt="METEOKO weather application preview"
+                    onerror="this.onerror=null;this.src='../asset/solar-data.png';">
 
                 <div class="portfolio-layer">
-                    <h4>Ticket Sales Interface</h4>
+                    <h4>METEOKO</h4>
+
                     <p>
-                        A web interface developed for a ticket sales
-                        platform, bringing a practical service concept to life.
+                        A weather web application powered by WeatherAPI.com,
+                        providing real-time conditions, forecasts, and
+                        weather information through a simple interface.
                     </p>
+
+                    <span class="project-category">Weather API · Frontend</span>
+                </div>
+            </a>
+
+            <!-- 3. Ticket Sales Platform -->
+            <a href="../ticket-platform/index.html"
+               class="portfolio-box"
+               aria-label="Explore the ticket sales platform">
+
+                <img
+                    src="../asset/ticket-platform.png"
+                    alt="Ticket sales platform preview">
+
+                <div class="portfolio-layer">
+                    <h4>Ticket Sales Platform</h4>
+
+                    <p>
+                        A user-friendly web interface designed to present
+                        events and simplify the ticket purchasing experience.
+                    </p>
+
                     <span class="project-category">Frontend Development</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-box">
-                <img src="../asset/phonebook.png"
-                    alt="Database diagram for my Phonebook personnel information project">
+            <!-- 4. Phonebook Database -->
+            <a href="../phonebook/index.html"
+               class="portfolio-box"
+               aria-label="Explore the phonebook database project">
+
+                <img
+                    src="../asset/phonebook.png"
+                    alt="Phonebook database diagram">
 
                 <div class="portfolio-layer">
                     <h4>Phonebook Database</h4>
+
                     <p>
-                        Database design for a personnel information
-                        application, structuring company employee records.
+                        A database design project focused on organizing
+                        personnel information and managing employee records.
                     </p>
+
                     <span class="project-category">Database Design</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-box">
-                <img src="../asset/solar-data.png"
-                    alt="Preview of my MT-5 solar-panel data collection software">
+            <!-- 5. Solar Data Collection -->
+            <a href="../solar-data/index.html"
+               class="portfolio-box"
+               aria-label="Explore the solar data collection project">
+
+                <img
+                    src="../asset/solar-data.png"
+                    alt="Solar data collection software preview">
 
                 <div class="portfolio-layer">
                     <h4>Solar Data Collection</h4>
+
                     <p>
-                        Software developed to collect MT-5 solar-panel
-                        data, connecting programming with a technical application.
+                        Software developed to collect and visualize
+                        MT-5 solar-panel data, connecting programming
+                        with a technical application.
                     </p>
+
                     <span class="project-category">Software Development</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="portfolio-box">
-                <img src="../asset/mug-model.png"
-                    alt="Mug model from my KOMPAS-related software project">
+            <!-- 6. Mug Modeling -->
+            <a href="../mug-plugin/index.html"
+               class="portfolio-box"
+               aria-label="Explore the mug modeling project">
+
+                <img
+                    src="../asset/mug-model.png"
+                    alt="Three-dimensional mug model">
 
                 <div class="portfolio-layer">
                     <h4>Mug Modeling Project</h4>
-                    <p>
-                        A software project for modeling a mug in connection
-                        with KOMPAS, combining programming and technical design.
-                    </p>
-                    <span class="project-category">Modeling &amp; Software</span>
-                </div>
-            </div>
 
-            <div class="portfolio-box">
-                <img src="../asset/hydroxyapatite-model.png"
-                    alt="Results from my hydroxyapatite hardness modeling project">
+                    <p>
+                        A C# software project connected to KOMPAS-3D,
+                        combining parameter-based modeling and
+                        automated technical design.
+                    </p>
+
+                    <span class="project-category">3D Modeling · C#</span>
+                </div>
+            </a>
+
+            <!-- 7. Hydroxyapatite Modeling -->
+            <a href="../hydroxyapatite/index.html"
+               class="portfolio-box"
+               aria-label="Explore the hydroxyapatite hardness model">
+
+                <img
+                    src="../asset/hydroxyapatite-model.png"
+                    alt="Hydroxyapatite hardness modeling results">
 
                 <div class="portfolio-layer">
                     <h4>Hydroxyapatite Hardness Model</h4>
+
                     <p>
-                        A hardness estimation model with verified results
-                        closely matching real measurements.
+                        A numerical study using COMSOL Multiphysics
+                        to investigate the influence of porosity
+                        on ceramic hardness through finite element modeling.
                     </p>
-                    <span class="project-category">Scientific Modeling</span>
+
+                    <span class="project-category">Scientific Modeling · FEM</span>
+
+                    <span class="project-link">
+                        View project <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-            </div>
+            </a>
+
         </div>
     </section>
 
     <script src="../nav.js"></script>
-</body>
 
+</body>
 </html>

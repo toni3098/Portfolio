@@ -165,6 +165,10 @@ a {
     margin: 0 auto;
 }
 
+#meteoko {
+    background-color: #fff;
+}
+
 /* Project cards */
 .portfolio-box {
     position: relative;
